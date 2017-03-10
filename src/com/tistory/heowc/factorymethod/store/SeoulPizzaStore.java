@@ -1,8 +1,8 @@
-package com.tistory.heowc.abstractfactory.store;
+package com.tistory.heowc.factorymethod.store;
 
-import com.tistory.heowc.abstractfactory.menu.CheesePizza;
-import com.tistory.heowc.abstractfactory.menu.Pizza;
-import com.tistory.heowc.abstractfactory.menu.SeafoodPizza;
+import com.tistory.heowc.factorymethod.menu.CheesePizza;
+import com.tistory.heowc.factorymethod.menu.Pizza;
+import com.tistory.heowc.factorymethod.menu.SeafoodPizza;
 
 import java.util.NoSuchElementException;
 

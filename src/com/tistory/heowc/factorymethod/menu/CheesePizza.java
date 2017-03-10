@@ -1,4 +1,4 @@
-package com.tistory.heowc.abstractfactory.menu;
+package com.tistory.heowc.factorymethod.menu;
 
 public class CheesePizza extends Pizza {
 

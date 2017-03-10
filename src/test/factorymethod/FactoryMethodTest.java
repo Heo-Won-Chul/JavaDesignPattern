@@ -1,16 +1,16 @@
-package test.abstractfactory;
+package test.factorymethod;
 
-import com.tistory.heowc.abstractfactory.menu.CheesePizza;
-import com.tistory.heowc.abstractfactory.menu.Pizza;
-import com.tistory.heowc.abstractfactory.menu.SeafoodPizza;
-import com.tistory.heowc.abstractfactory.store.PizzaStore;
-import com.tistory.heowc.abstractfactory.store.SeoulPizzaStore;
+import com.tistory.heowc.factorymethod.menu.CheesePizza;
+import com.tistory.heowc.factorymethod.menu.Pizza;
+import com.tistory.heowc.factorymethod.menu.SeafoodPizza;
+import com.tistory.heowc.factorymethod.store.PizzaStore;
+import com.tistory.heowc.factorymethod.store.SeoulPizzaStore;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class AbstractFactoryTest {
+public class FactoryMethodTest {
 
     Pizza firstPizza;
     Pizza secondPizza;
