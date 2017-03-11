@@ -21,9 +21,6 @@ public class FactoryMethodTest {
         firstPizza = store.order("cheese");
         secondPizza = store.order("seefood");
 
-        System.out.println(firstPizza.toString());
-        System.out.println(secondPizza.toString());
-
 //        secondPizza = store.order("potato");
 //        NoSuchElementException : potato is not supported.
     }
