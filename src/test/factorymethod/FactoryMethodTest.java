@@ -3,8 +3,8 @@ package test.factorymethod;
 import com.tistory.heowc.factorymethod.menu.CheesePizza;
 import com.tistory.heowc.factorymethod.menu.Pizza;
 import com.tistory.heowc.factorymethod.menu.SeafoodPizza;
-import com.tistory.heowc.factorymethod.store.PizzaStore;
-import com.tistory.heowc.factorymethod.store.SeoulPizzaStore;
+import com.tistory.heowc.factorymethod.store.PizzaFactory;
+import com.tistory.heowc.factorymethod.store.SeoulPizzaFactory;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,11 +17,11 @@ public class FactoryMethodTest {
 
     @Before
     public void before_order() throws Exception {
-        PizzaStore store = new SeoulPizzaStore();
-        firstPizza = store.order("cheese");
-        secondPizza = store.order("seefood");
+        PizzaFactory factory = new SeoulPizzaFactory();
+        firstPizza = factory.order("cheese");
+        secondPizza = factory.order("seefood");
 
-//        secondPizza = store.order("potato");
+//        secondPizza = factory.order("potato");
 //        NoSuchElementException : potato is not supported.
     }
 

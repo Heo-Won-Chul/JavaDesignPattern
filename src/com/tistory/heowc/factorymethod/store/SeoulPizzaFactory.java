@@ -6,7 +6,7 @@ import com.tistory.heowc.factorymethod.menu.SeafoodPizza;
 
 import java.util.NoSuchElementException;
 
-public class SeoulPizzaStore extends PizzaStore {
+public class SeoulPizzaFactory extends PizzaFactory {
 
     @Override
     public Pizza order(String name) {
