@@ -1,6 +1,6 @@
 # Intro
 
-* Java 8 Sample Code
+* Java Design Pattern Sample
 
 # Build
 
