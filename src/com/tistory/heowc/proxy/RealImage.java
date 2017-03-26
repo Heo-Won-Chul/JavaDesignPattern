@@ -6,10 +6,10 @@ public class RealImage implements Image {
 
     public RealImage(String fileName) {
         this.fileName = fileName;
-        loadongImage();
+        loadingImage();
     }
 
-    private void loadongImage() {
+    private void loadingImage() {
         System.out.println("[" + fileName + "] Loading ...");
     }
 
