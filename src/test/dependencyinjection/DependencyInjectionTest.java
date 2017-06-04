@@ -13,12 +13,16 @@ public class DependencyInjectionTest {
 
     @Before
     public void before_init() throws Exception {
-        userService = new UserServiceImpl();
-        ((UserServiceImpl)userService).setUserRepository(new UserARepository());
+        userService = new UserServiceImpl(new UserARepository());
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void test_duplicateInsert() throws Exception {
         userService.insert(new User(1, "wonchul"));
+    }
+
+    @Test
+    public void test_noDuplicateInsert() throws Exception {
+        userService.insert(new User(2, "wc"));
     }
 }

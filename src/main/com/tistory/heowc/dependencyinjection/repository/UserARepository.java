@@ -6,7 +6,11 @@ public class UserARepository implements UserRepository {
 
     @Override
     public User findById(int id) {
-        return new User(id, "won chul");
+        if (id == 1) {
+            return new User(id, "won chul");
+        }
+
+        return null;
     }
 
     @Override
