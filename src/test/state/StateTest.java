@@ -9,25 +9,22 @@ import org.junit.Test;
 public class StateTest {
 
     private PlayerContext playerContext = new PlayerContext();
-    private PlayingState playingState = new PlayingState(playerContext);
-    private StartState startState = new StartState(playerContext);
-    private StopState stopState = new StopState(playerContext);
 
     @Test
     public void test_stop() {
-        playerContext.setPlayerState(stopState);
+        playerContext.setPlayerState(new StopState());
         playerContext.getPlayerState().action();
     }
 
     @Test
     public void test_start() {
-        playerContext.setPlayerState(startState);
+        playerContext.setPlayerState(new StartState());
         playerContext.getPlayerState().action();
     }
 
     @Test
     public void test_playing() {
-        playerContext.setPlayerState(playingState);
+        playerContext.setPlayerState(new PlayingState());
         playerContext.getPlayerState().action();
     }
 }
